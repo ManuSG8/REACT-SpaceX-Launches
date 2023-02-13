@@ -26,6 +26,7 @@ function LaunchList() {
   
   const allLaunches = () => {
     setLaunches(originalLaunches)
+    setLimit(10)
   }
 
   useEffect(() => {

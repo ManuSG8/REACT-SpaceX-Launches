@@ -11,3 +11,9 @@ export async function getLaunchesById(flighNumber) {
   const data = await response.json()
   return data
 }
+
+export async function getRocketsById(rocketId) {
+  const response = await fetch(`${API_URL}/rockets/${rocketId}`)
+  const data = await response.json()
+  return data
+}

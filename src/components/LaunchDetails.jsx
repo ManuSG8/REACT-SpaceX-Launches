@@ -24,7 +24,9 @@ function LaunchDetails() {
           <>
             <img src={spacexLogo} width='200' alt='' />
             <h2>{launch.mission_name}</h2>
-            <p>Rocket Name: <strong>{launch.rocket?.rocket_name}</strong></p>
+            <Link to={`/rockets/${launch.rocket?.rocket_id}`}>
+              <p>Rocket Name: <strong>{launch.rocket?.rocket_name}</strong></p>
+            </Link>
             <p>Local Launch Date: <strong>{launch.launch_date_local}</strong></p>
             <p>Details: <strong>{launch.details ? launch.details : 'Not specified'}</strong></p>
             {launch.launch_failure_details?.reason ? (
