@@ -36,12 +36,12 @@ function RocketDetails() {
                 <p>Engines: <strong>{rocket.engines?.number} ({rocket.engines?.type} type)</strong></p>
               </div>
             </div>
-            <img src={`${rocket.flickr_images}`} alt='' />
+            <img className='rocket' src={`${rocket.flickr_images}`} alt='' />
             <p className='description'>Description: <strong>{rocket.description}</strong></p>
           </>
         )
       }
-      <Button type='backToDetails' handleClick={() => window.history.back()}>Back</Button>
+      <Button type='back' handleClick={() => window.history.back()}>Back</Button>
     </div>
   )
 }

@@ -2,6 +2,7 @@
 
 
 .rocket-details-container {
+  margin-bottom: 2rem;
   background-color: #79BEEE;
   border-radius: 20px;
   display: flex;
@@ -49,7 +50,7 @@
   margin: 0 auto;
 }
 
-img {
+img.rocket {
   width: 100%;
   max-width: 250px;
   margin: 1rem auto;
@@ -64,8 +65,10 @@ img {
   text-align: left;
 }
 
-.backToDetails:hover {
-  background-color: blue;
+.back {
+  width: max-content;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
 }
 
 p {
@@ -73,13 +76,13 @@ p {
 }
 
 @media screen and (min-width:500px) {
-  img {
+  img.rocket {
     max-width: 350px;
   }
 }
 
 @media screen and (min-width:900px) {
-  img {
+  img.rocket {
     max-width: 550px;
   }
   .info-container {
