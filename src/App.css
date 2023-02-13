@@ -1,0 +1,13 @@
+.App {
+  max-width: 95%;
+  background-color: #EFEFEF;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 1rem auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: rgba(0, 0, 0, 0.726);
+}

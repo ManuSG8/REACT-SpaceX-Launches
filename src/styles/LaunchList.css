@@ -1,0 +1,103 @@
+.launch-list-container {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-color: #EFEFEF;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 0rem;
+}
+
+button {
+  color: white;
+  font-size: 0.8rem;
+  font-family: 'Roboto Mono', monospace;
+  outline: none;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.filter-container {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+
+.all-button {
+  background-color: rgba(48, 120, 214, 0.788);
+  font-size: 0.7rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.failures-button {
+  background-color: rgba(224, 35, 35, 0.801);
+  font-size: 0.7rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.success-button {
+  background-color: rgba(136, 153, 43, 0.822);
+  font-size: 0.8rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.all-button:hover {
+  background-color: rgb(48, 120, 214);
+}
+.failures-button:hover {
+  background-color: rgb(224, 35, 35);
+}
+.success-button:hover {
+  background-color: rgb(136, 153, 43);
+}
+
+.more {
+  background-color: rgba(0, 128, 0, 0.74);
+  font-size: 1.1rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.less {
+  background-color: rgba(255, 0, 0, 0.733);
+  font-size: 1.1rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.more:hover {
+  background-color: rgb(0, 128, 0);
+}
+.less:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+.showed-launches {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+  .launch-list-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .all-button, .success-button, .failures-button {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .launch-list-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .all-button, .success-button, .failures-button {
+    font-size: 1.1rem;
+  }
+}
